@@ -1,0 +1,194 @@
+*{
+    background-color:#0a1f3a;
+    overflow-x: clip;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    text-align: center;
+    width: 100%;
+    padding:20px ;
+    border-bottom:1px solid #457b9d ;
+}
+header h1{
+    background: linear-gradient(90deg ,#e63946, #f4a261,#e9c46a);
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    font-size: 100px;
+    margin: 10px 0 0 0;
+    letter-spacing: 0.1px;
+}
+header p{
+    color: #a8dadc;
+    margin: 10px;
+    font-size: 25px;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+header nav a{
+    font-size: 20px;
+    color: #f4a261;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+header nav a:hover{
+    color: white;
+}
+/* ================================== Welcome =========================== */
+main{
+    padding-top:  200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+main h2{
+    color: #e9c46a;
+    font-size: 75px;
+    margin-top: 150px;
+}
+
+main #welcome img{
+    height: 600px;
+    margin: 50px;
+    border-radius: 14px;
+    box-shadow: 0 10px 50px  rgba(0, 0, 0, 0.5);
+
+}
+main figcaption{
+    color: #a8dadc;
+    margin-top: 20px;
+}
+main #welcome p{
+    color: white;
+    margin: 60px;
+    font-size: 20px;
+}
+/* ================================== numbers =========================== */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0px;
+    margin: 50px 130px;
+}
+.article {
+    background: #0f2a4d;
+    margin: 50px ;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid #457b9d;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+.article h3, p{
+    background: transparent;
+    color: white;
+}
+.article progress, meter{
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+    border-radius: 999px;
+    background: #a8dadc;
+    border-radius: 20px;
+}
+
+
+.article progress::-webkit-progress-bar{
+    border-radius: 20px;
+    background: #a8dadc;
+
+}
+.article progress::-webkit-progress-value{
+    border-radius: 20px;
+    background-color: #e63946;
+}
+.article:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(230, 57, 70, 0.2) ;
+}
+
+/* ================================== Gaudi =========================== */
+
+.gallery figure {
+    margin: 0px;
+    padding: 10px;
+    /* width: 340px; */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+figure img{
+    border-radius: 14px;
+    max-width: 100%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* ================================== aside =========================== */
+
+
+aside{
+    background-color: rgba(233, 196, 106, 0.1);
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 196, 106, 0.3);
+    margin: 200px 40px 40px 40px  ;
+    text-align: left;
+    color: white;
+}
+aside h3,ul,li{
+    background-color: transparent;
+}
+aside h3{
+    padding-left: 35px;
+}
+aside ul{
+  list-style-type:circle ;
+  line-height: 20px;
+}
+
+/* ================================== vibe =========================== */
+
+details{
+    margin: 40px 180px;
+    padding: 25px;
+    background: rgba(244, 162, 97, 0.08);
+    border: 1px solid #f4a261;
+    border-radius: 12px;
+    text-align: left;
+    justify-content: center;
+}
+summary{
+    background-color: transparent;
+    color: #f4a261;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+details p{
+    color: #ffffff;
+}
+
+/* ================================== footer =========================== */
+
+footer{
+    margin: 160px 0 60px 0;
+    text-align: center;
+    width: 100%;
+    padding:30px ;
+    border-top:1px solid #457b9d ;
+    color: #a8dadc;
+}
+address{
+    margin-top: 60px;
+}
+address a{
+    color: #f4a261;
+}
+p{
+    color: #a8dadc;
+}
